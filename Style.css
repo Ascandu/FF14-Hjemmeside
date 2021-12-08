@@ -2,7 +2,7 @@
 /* CSS Document */
 /*Definerer hjemmesidens generelle skriftstørrelse og hvilken font den anvender */
 html {
-	font-size: 14px;
+	font-size: 10px;
 	font-family: "NotoSerif Regular"
 }
 /* Gør den generelle baggrund på hjemmesiden sort */
@@ -33,7 +33,7 @@ a {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 }
 
 /* Hero sektion */
@@ -43,4 +43,82 @@ a {
 	background-position: top center;
 	position: relative;
 }
+
+#hero h1 {
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: white;
+}
+/* Der laves en boks til vores knap som gør knappens baggrund gennemsigtig og giver den en hvid kant, padding til teksten defineres til 10px og 40px. Teksten gøres orange og gøres to gange så stor som browseren skriftstørrelse */
+#hero .cta {
+	display: inline-block;
+	padding: 10px 40px;
+		color: orange;
+	background-color: transparent;
+	border: 1px solid white;
+	font-size: 2rem;
+}
+/* Hover funktion som bytter farverne på knappen når musemarkøren er på knappen. */
+#hero .cta:hover {
+	color: white;
+	background-color: orange;
+}
 /* Hero sektion slut */
+
+
+
+/* Experience sektion start */
+#experience {
+	background-image: url("Viera sage.png");
+		background-size: cover;
+	background-position: top center;
+	position: relative;
+}
+
+#experience h2  {
+	display: block;
+	width: 100%;
+	font-size: 2rem;
+	position: relative;
+	color: black;
+}
+.container2 {
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:50%;
+}
+.video-responsive iframe{
+    left:10%;
+    top:10%;
+    height:80%;
+    width:80%;
+    position:absolute;
+}
+/* Experience sektion slut */
+
+/* interest sektion start */
+
+#interest {
+	background-image: url("endwalker moon 1920x1080.png");
+		background-size: cover;
+	background-position: top center;
+	position: relative;
+}
+
+.container3 {
+	min-height: 100vh;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+/* interest sektion slut */
