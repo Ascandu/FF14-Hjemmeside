@@ -69,11 +69,11 @@ a {
 
 
 
-/* Experience sektion start */
+/* experience sektion start */
 #experience {
 	background-image: url("Viera sage.png");
 		background-size: cover;
-	background-position: top center;
+	background-position: top right;
 	position: relative;
 }
 
@@ -101,15 +101,15 @@ a {
     left:10%;
     top:10%;
     height:80%;
-    width:80%;
+    width:70%;
     position:absolute;
 }
-/* Experience sektion slut */
+/* experience sektion slut */
 
-/* interest sektion start */
+/* desire sektion start */
 
-#interest {
-	background-image: url("endwalker moon 1920x1080.png");
+#desire {
+	background-image: url("FFXIV desire art.png");
 		background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -121,4 +121,75 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-/* interest sektion slut */
+
+#desire h3  {
+	display: block;
+	width: 100%;
+	font-size: 2rem;
+	position: relative;
+	color: orange;
+}
+
+.container4 {
+	left:10%;
+    top:10%;
+	min-height: 80vh;
+	width: 80%;
+	position:absolute;
+}
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 600%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 16.66%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0%;
+	}
+	16.66% { 
+		left: 0%;
+		
+	}
+	17% {
+		left: -100%;
+	}
+	33.66% {
+		left: -100%;
+	}
+	34% {
+		left: -200%;
+	}
+	50.66% {
+		left: -200%;
+	}
+	51% {
+		left: -300%;
+	}
+	67.66% {
+		left: -300%;
+	}
+	68% {
+		left: -400%;
+	}
+	84.66% {
+		left: -400%;
+	}
+	85% {
+		left: -500%;
+	}
+	100% {
+		left: -500%;
+	}
+}
+/* desire sektion slut */
