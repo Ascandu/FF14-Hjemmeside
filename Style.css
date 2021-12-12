@@ -146,20 +146,18 @@ a {
 	width: 600%;
 	margin: 0;
 	left: 0;
-	animation: 30s slider infinite;
+	animation: 60s slider infinite;
 }
 #slider figure img {
 	float: left;
 	width: 16.66%;
 }
-
 @keyframes slider {
 	0% {
 		left: 0%;
 	}
 	16.66% { 
 		left: 0%;
-		
 	}
 	17% {
 		left: -100%;
