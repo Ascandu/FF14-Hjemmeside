@@ -36,10 +36,57 @@ a {
 	justify-content: left;
 }
 
+
+/* Header sektion */
+.navbarheader h1 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: white;
+}
+/* fastgør headerens position således at den altid er i toppen af siden og mod venstre. Derudover har den en høj z-index værdi fordi den skal være i front i forhold til de andre elementer. Derudover er bredden defineret til 100% af view width så den er reponsive og højden skal bare auto tilpasse */
+#header {
+	position:fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+/* Sætter minimum højden til 8 view height og laver en 50% gennemsigtig sort farve til headeren */
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(0,0,0,0.50)
+}
+
+
+/* Skaber mellemrum imellem teksten Final Fantasy XIV og knapperne. Derudover defineres elementerne til at fylde 100% og gives en max bredde på 1080 pixels.*/
+.header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1080px;
+	padding: 0 20px;
+}
+
+
+
+#header .cta {
+	display:inline-block;
+	padding: 5px 10px;
+	color: orange;
+	background-color: black;
+	font-size: 1.5rem;
+}
+/* Header sektion slut */
+
 /* Hero sektion */
+/* Sætter baggrundsbillede og fastlåser positionen */
 #hero {
 	background-image: url("endwalker moon 1920x1080.png");
-		background-size: cover;
+	background-size: cover;
 	background-position: top center;
 	position: relative;
 }
@@ -55,7 +102,7 @@ a {
 #hero .cta {
 	display: inline-block;
 	padding: 10px 40px;
-		color: orange;
+	color: orange;
 	background-color: transparent;
 	border: 1px solid white;
 	font-size: 2rem;
@@ -70,9 +117,10 @@ a {
 
 
 /* experience sektion start */
+/* Sætter baggrundsbillede og fastlåser positionen */
 #experience {
 	background-image: url("Viera sage.png");
-		background-size: cover;
+	background-size: cover;
 	background-position: top right;
 	position: relative;
 }
@@ -86,7 +134,7 @@ a {
 }
 .container2 {
 	min-height: 100vh;
-	width: 100%;
+	width: 100vw;
 	align-items: center;
 	justify-content: center;
 }
@@ -107,10 +155,10 @@ a {
 /* experience sektion slut */
 
 /* desire sektion start */
-
+/* Sætter baggrundsbillede og fastlåser positionen */
 #desire {
 	background-image: url("FFXIV desire art.png");
-		background-size: cover;
+	background-size: cover;
 	background-position: top center;
 	position: relative;
 }
@@ -135,7 +183,7 @@ a {
     top:10%;
 	min-height: 80vh;
 	width: 80%;
-	position:absolute;
+	position:relative;
 }
 
 #slider {
@@ -191,3 +239,45 @@ a {
 	}
 }
 /* desire sektion slut */
+
+/* action sektion start */
+/* Sætter baggrundsbillede og fastlåser positionen */
+
+#action {
+	background-image: url("FF14 Y'shtola.jpg");
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+}
+#action h4  {
+	display: block;
+	width: 100%;
+	font-size: 4rem;
+	position: relative;
+	color: white;
+}
+
+.container5 {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: top;
+	justify-content: center;
+}
+
+#action .cta {
+	display: inline-block;
+	padding: 5px 10px;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	font-size: 3rem;
+}
+
+#action .cta:hover {
+	color: orange;
+	background-color: black;
+}
+
+
+/* action sektion slut */
