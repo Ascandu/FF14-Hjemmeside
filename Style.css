@@ -28,13 +28,7 @@ p {
 a {
 	text-decoration: none;
 }
-.container {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: left;
-}
+
 
 
 /* Header sektion */
@@ -78,11 +72,19 @@ a {
 	padding: 5px 10px;
 	color: orange;
 	background-color: black;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 /* Header sektion slut */
 
 /* Hero sektion */
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
 /* Sætter baggrundsbillede og fastlåser positionen */
 #hero {
 	background-image: url("endwalker moon 1920x1080.png");
@@ -124,13 +126,19 @@ a {
 	background-position: top right;
 	position: relative;
 }
-
+#experience .h2-boks {
+	display: inline-block;
+	padding: 10px 10px;
+	color: orange;
+	background-color: black;
+	border: 1px solid orange;
+}
 #experience h2  {
 	display: block;
 	width: 100%;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	position: relative;
-	color: black;
+	color: white;
 }
 .container2 {
 	min-height: 100vh;
@@ -169,15 +177,22 @@ a {
 	align-items: center;
 	justify-content: center;
 }
-
+/* Laver en ramme til h3 */
+#desire .h3-boks {
+	display: inline-block;
+	padding: 10px 10px;
+	color: orange;
+	background-color: black;
+	border: 1px solid orange;
+}
+/* Hvordan teksten opfører sig i forhold til skærmen */
 #desire h3  {
 	display: block;
-	width: 100%;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	position: relative;
-	color: orange;
+	color: white;
 }
-
+/* container4 bestemmer hvor meget slideshow elementet fylder på skærmens størrelse. Således at position er fastlåst med hvor meget plads der gives mod top og venstre side af skærmen. */
 .container4 {
 	left:10%;
     top:10%;
@@ -185,10 +200,11 @@ a {
 	width: 80%;
 	position:relative;
 }
-
+/* til at gemme eventuelle slider bars der er uønskede */
 #slider {
 	overflow: hidden;
 }
+/* Selve slider systemets størrelse. Hvert eneste billede fylder 100% af pladsen som der er givet, da der er seks billeder skal vi derfor bruge 600%  bredd. Selve timeren er sat til et 60s sekunders loop, da der er afsat i procent hvor meget tid der gives til hvert eneste billede. Så der afsættes omkring 10 sekunder til hvert billede. */
 #slider figure {
 	position: relative;
 	width: 600%;
@@ -196,10 +212,12 @@ a {
 	left: 0;
 	animation: 60s slider infinite;
 }
+/* Billederne forsvinder ud mod venstre side */
 #slider figure img {
 	float: left;
 	width: 16.66%;
 }
+/* Keyframes definerer hvor meget tid der bruges af den hele tid på hvert billede i slideshowet */
 @keyframes slider {
 	0% {
 		left: 0%;
@@ -248,33 +266,32 @@ a {
 	background-size: cover;
 	background-position: top center;
 	position: relative;
+	min-height: 100vh;
+	width: 100vw;
 }
+
+
+
 #action h4  {
 	display: block;
-	width: 100%;
-	font-size: 4rem;
-	position: relative;
+	font-size: 3rem;
 	color: white;
+	padding: 100px 5px;	
 }
 
-.container5 {
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: top;
-	justify-content: center;
-}
-
-#action .cta {
-	display: inline-block;
+#action .cta2 {
+    display: inline-block;
 	padding: 5px 10px;
 	color: white;
 	background-color: black;
 	border: 1px solid white;
 	font-size: 3rem;
+	margin-top: 30px;
+	margin-left: 20px;
+	
 }
 
-#action .cta:hover {
+#action .cta2:hover {
 	color: orange;
 	background-color: black;
 }
