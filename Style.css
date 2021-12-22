@@ -66,7 +66,7 @@ a {
 }
 
 
-
+/*Styler knapper og definerer deres størrelse */
 #header .cta {
 	display:inline-block;
 	padding: 5px 10px;
@@ -92,7 +92,7 @@ a {
 	background-position: top center;
 	position: relative;
 }
-
+/* Opsætningen af h1 */
 #hero h1 {
 	display: block;
 	width: fit-content;
@@ -133,6 +133,7 @@ a {
 	background-color: black;
 	border: 1px solid orange;
 }
+/* Opsætning for h2's opførsel */
 #experience h2  {
 	display: block;
 	width: 100%;
@@ -140,7 +141,7 @@ a {
 	position: relative;
 	color: white;
 }
-
+/* Disse elementer sørger for at den video der er embedded er responsiv således at den tilpasser sig skærmstørrelsen */
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -181,7 +182,7 @@ a {
 	position: relative;
 	color: white;
 }
-/* container4 bestemmer hvor meget slideshow elementet fylder på skærmens størrelse. Således at position er fastlåst med hvor meget plads der gives mod top og venstre side af skærmen. */
+/* Gives regler for hvor slideren skal placere sig selv i forhold til skærmstørrelse og hvor meget height den kan tillade sig at bruge. */
 #slider {
 	left:10%;
     top:10%;
@@ -260,14 +261,14 @@ a {
 }
 
 
-
+/* regler for h4 om udseende og størrelse igennem rem og padding anvendes til placering */
 #action h4  {
 	display: block;
 	font-size: 3rem;
 	color: white;
 	padding: 100px 5px;	
 }
-
+/* display metode som er på linje og udseende for knapperne og deres placering i forhold til andre elementer i form af margin */
 #action .cta2 {
     display: inline-block;
 	padding: 5px 10px;
@@ -279,11 +280,12 @@ a {
 	margin-left: 20px;
 	
 }
-
+/*Når man holder musemarkøren på knappen skifter den farve */
 #action .cta2:hover {
 	color: orange;
 	background-color: black;
 }
+/* Container til social media navigationsbaren som definerer hvor meget viewheight den gives, den placering igennem left og bottom. Derudover hvilken farve baren og hvor gennemsigtig den er i dette tilfælde 25%. Z-index er der for at fortælle hjemmesiden at dette element skal være i front og with at den skal fylde 100% af bredden der er vist*/
 #action .container {
 	left: 0;
 	bottom: 0;
@@ -293,6 +295,7 @@ a {
 	z-index: 1000;
 	width: 100%;
 }
+/* Opsætning af sociale medie knapper som vises et element af gangen og fjerner listeforms prikkerne igennem list-style: none*/
 #action .social-media {
 		display: flex;
 	list-style: none;
